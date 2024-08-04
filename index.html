@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="scoreboard">
+            <div>COMPUTER SCORE</div>
+            <div id="computer-score">0</div>
+            <div>YOUR SCORE</div>
+            <div id="your-score">0</div>
+        </div>
+        <h1>ROCK PAPER SCISSORS</h1>
+        <div class="choices">
+            <div class="choice" id="rock">
+                <img src="rock.png" alt="Rock">
+            </div>
+            <div class="choice" id="paper">
+                <img src="paper.png" alt="Paper">
+            </div>
+            <div class="choice" id="scissors">
+                <img src="scissor.png" alt="Scissors">
+            </div>
+        </div>
+        <div id="result-message"></div>
+        <button id="play-again">Play Again</button>
+        <button id="rules-btn">Rules</button>
+    </div>
+
+    <div id="rules-popup" class="popup">
+        <div class="popup-content">
+            <span id="close-btn">&times;</span>
+            <h2>Game Rules</h2>
+            <p>Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+            <p>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</p>
+            <p>If both players lay down the same hand, each player lays down another hand.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
